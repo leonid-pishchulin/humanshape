@@ -7,13 +7,13 @@ if (bSave)
     figuresDir = p.figuresDir;
 end
 
-load([modelDir '/evalues'], 'evalues');
-load([modelDir '/evectors'], 'evectors');
+load([p.modelInDir '/evalues'], 'evalues');
+load([p.modelInDir '/evectors'], 'evectors');
 load('facesShapeModel.mat','faces');
 shapeParams = zeros(1,20);
 
 shapeParams(idxShape) = sign*3*sqrt(evalues(idxShape));
-points = changeShapePose(zeros(1,31), shapeParams, evectors, modelDir);
+points = changeShapePose(zeros(1,31), shapeParams, evectors, p.modelInDir);
 points(:,3) = points(:,3) - min(points(:,3));
 
 template.points = points;
@@ -37,7 +37,7 @@ axis equal;
 axis off;
 grid on;
 
-[path,name] = fileparts(modelDir);
+[path,name] = fileparts(p.modelInDir);
 [~,name2] = fileparts(path);
 
 if (bSave)
