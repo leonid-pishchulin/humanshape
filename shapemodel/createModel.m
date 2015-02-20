@@ -1,4 +1,5 @@
 function createModel(expidx)
+fprintf('createModel\n');
 
 p = expParams(expidx);
 

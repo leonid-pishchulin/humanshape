@@ -20,7 +20,6 @@ switch expidx
     case 0
         p.name = 'init-nrd-3';
         % directory with fitting results
-%         p.fitDir = '/BS/leonid-pose/work/experiments-caesar/model-mpii-all-samples-warm-sched-3-bootstrap-4/';
         p.fitDir = [p.expDir '/' p.name];
         %load initial fitting, if available
         p.initDir = p.fitDir;

@@ -15,6 +15,10 @@ if (exist(fnameData, 'file') > 0)
     load(fnameData,'data');
 else
     data = readFits(p.fitDir);
+    if (size(data,1) < 2)
+        warning(['At least two fits required, found: ' num2str(size(data,1)) '. Exiting']);
+        return;
+    end
     tic
     % procrustes analysis to rigidly align the scans
     data = rigidAlign(data',size(data,2),size(data,1))';

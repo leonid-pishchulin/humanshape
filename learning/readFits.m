@@ -1,6 +1,6 @@
 function data = readFits(fitDir)
 
-fprintf('readNRD()\n');
+fprintf('readFits()\n');
 
 files = dir(fitDir);
 bIsFitDir = zeros(length(files),1);
