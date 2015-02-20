@@ -45,11 +45,11 @@ fitMesh(scanFilenames,landmarkFilenames,expidx);
 
 % visualize registration
 fprintf('result of pose fitting using landmarks, press any key\n');
-clf; visFitDir([p.saveDir '/' scanName],0); pause;
+clf; visFitDir([p.fitDir '/' scanName],0); pause;
 fprintf('result of pose and shape fitting using all vertices, press any key\n');
-clf; visFitDir([p.saveDir '/' scanName],1); pause;
+clf; visFitDir([p.fitDir '/' scanName],1); pause;
 fprintf('result of non-rigid deformation, press any key\n');
-clf; visFitDir([p.saveDir '/' scanName],2); pause;
+clf; visFitDir([p.fitDir '/' scanName],2); pause;
 
 %% learn PCA model
 % learnPCA(expidx);

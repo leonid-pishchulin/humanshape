@@ -33,7 +33,7 @@ switch expidx
         % variants of NRD:
         % -1 - no NRD; 0 - NRD, const weights; 1-3 - NRD, reduce weights
         % p.nrdWidx = 3 leads to best results
-        p.nrdWidx = -1;
+        p.nrdWidx = 3;
         % number of shape space parameters
         p.nPCA = 20;
         % color id for visualization
