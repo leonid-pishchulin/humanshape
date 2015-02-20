@@ -12,7 +12,7 @@ load('facesShapeModel.mat','faces');
 shapeParams = zeros(1,20);
 
 shapeParams(idxShape) = sign*3*sqrt(evalues(idxShape));
-points = changeShapePose(zeros(1,31), shapeParams, evectors, p.modelInDir);
+points = shapepose(zeros(1,31), shapeParams, evectors, p.modelInDir);
 points(:,3) = points(:,3) - min(points(:,3));
 
 template.points = points;
