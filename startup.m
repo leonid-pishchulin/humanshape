@@ -3,6 +3,6 @@ if (~isdeployed)
     addpath([pwd '/shapemodel/']);
     addpath([pwd '/fitting/']);
     addpath([pwd '/learning/']);
-    addpath([pwd '/evaluate/']);
-    addpath([pwd '/evaluate/statQuality/']);
+    addpath([pwd '/evaluation/']);
+    addpath([pwd '/evaluation/statQuality/']);
 end
