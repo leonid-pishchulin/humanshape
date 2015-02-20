@@ -15,7 +15,7 @@ points = shapepose(poseParams,shapeParams,evectors,p.modelInDir);
 load(p.facesSM,'faces');
 clf;
 showmodel(points,faces,'r',[],0);
-axis equal; view(45,22.5); pause;
+axis equal; view(45,22.5); pause; fprintf("press any button\n");
 
 fprintf('change pose and shape\n');
 % description of pose parameters in shapemodel/poseParamsDescript.m
@@ -26,7 +26,7 @@ points = shapepose(poseParams,shapeParams,evectors,p.modelInDir);
 % show model
 hold on;
 showmodel(points,faces,'g',[],0);
-axis equal; view(45,22.5); pause;
+axis equal; view(45,22.5); pause; fprintf("press any button\n");
 
 fprintf('visualize eigenvector scaled by 3 st.d.\n');
 vpAngle = 90; % visualization viewpoint
@@ -34,7 +34,7 @@ idxShape = 1; % first eigenvector
 sign = -1; % sign of st.d.
 bSave = false; % save figure
 clf;
-visModelVP(expidx,vpAngle,idxShape,sign,bSave); pause;
+visModelVP(expidx,vpAngle,idxShape,sign,bSave); pause; fprintf("press any button\n");
 
 %% register human scan
 scanName = 'scan';
@@ -45,11 +45,11 @@ fitMesh(scanFilenames,landmarkFilenames,expidx);
 
 % visualize registration
 fprintf('result of pose fitting using landmarks\n');
-clf; visFitDir([p.saveDir '/' scanName],0); pause;
+clf; visFitDir([p.saveDir '/' scanName],0); pause; fprintf("press any button\n");
 fprintf('result of pose and shape fitting using all vertices\n');
-clf; visFitDir([p.saveDir '/' scanName],1); pause;
+clf; visFitDir([p.saveDir '/' scanName],1); pause; fprintf("press any button\n");
 fprintf('result of non-rigid deformation\n');
-clf; visFitDir([p.saveDir '/' scanName],2); pause;
+clf; visFitDir([p.saveDir '/' scanName],2); pause; fprintf("press any button\n");
 
 %% learn PCA model
 % learnPCA(expidx);
