@@ -25,9 +25,9 @@ switch expidx
         %load initial fitting, if available
         p.initDir = p.fitDir;
         % directory to load existing PCA model from
-        p.modelInDir = '/BS/leonid-pose/work/experiments-caesar/model-mpii-all-samples-warm-sched-3-bootstrap-4/model/';
+        p.modelInDir = [p.expDir 'models/caesar'];
         % directory to save a newly learned PCA model to
-        p.modelOutDir = [p.expDir 'model'];
+        p.modelOutDir = [p.fitDir '/model'];
         % shape and pose fitting prior to non-rigid deformation (NRD)
         p.bInit = true;
         % variants of NRD:
