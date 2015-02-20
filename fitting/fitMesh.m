@@ -1,5 +1,5 @@
-function register3D(scanFilenames,landmarksScanFilename,expidx)
-fprintf('register3D()\n');
+function fitMesh(scanFilenames,landmarksScanFilename,expidx)
+fprintf('fitMesh()\n');
 
 % scanFilenames = {'scan.ply'};
 % landmarksFilenames = {'scan.lnd'};

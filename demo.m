@@ -41,7 +41,7 @@ scanName = 'scan';
 scanFilenames = {[scanName '.ply']};
 landmarkFilenames = {[scanName '.lnd']};
 fprintf('register human scan\n');
-register3D(scanFilenames,landmarkFilenames,expidx);
+fitMesh(scanFilenames,landmarkFilenames,expidx);
 
 % visualize registration
 fprintf('result of pose fitting using landmarks\n');
