@@ -14,14 +14,14 @@ points = shapepose(poseParams,shapeParams,evectors,p.modelInDir);
 % show model
 load(p.facesSM,'faces');
 clf;
-showmodel(points,faces,'g',[],0);
+showmodel(points,faces,'r',[],0);
 axis equal; view(45,22.5); pause;
 
 fprintf('change pose and shape\n');
 % description of pose parameters in shapemodel/poseParamsDescript.m
 poseParams(24) = 45/180*pi; % rotate right shoulder by 45 degrees
 shapeParams(1) = 3*sqrt(evalues(1)); % change height to 3 st.d. from mean
-points = shapepose(poseParams,shapeParams,evectors,p.modelDir);
+points = shapepose(poseParams,shapeParams,evectors,p.modelInDir);
 
 % show model
 hold on;
