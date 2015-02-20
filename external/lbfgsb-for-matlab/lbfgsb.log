@@ -1,0 +1,17 @@
+This is pdfTeX, Version 3.1415926-1.40.10 (TeX Live 2009/Debian) (format=mex 2012.5.10)  1 AUG 2012 17:43
+entering extended mode
+ %&-line parsing enabled.
+**lbfgsb arrayofmatrices.cpp lbfgsb.cpp matlabexception.cpp matlabmatrix.cpp ma
+tlabprogram.cpp matlabscalar.cpp matlabstring.cpp program.cpp solver.f
+(./lbfgsb.cpp
+This is MeX  Version 1.05  18 XII 1993  (B. Jackowski & M. Ry\'cko)
+! You can't use `macro parameter character #' in vertical mode.
+l.1 #
+     include "mex.h"
+? 
+! Emergency stop.
+l.1 #
+     include "mex.h"
+End of file on the terminal!
+
+No pages of output.

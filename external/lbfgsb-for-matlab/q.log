@@ -1,0 +1,16 @@
+This is pdfTeX, Version 3.1415926-1.40.10 (TeX Live 2009/Debian) (format=mex 2012.5.10)  1 AUG 2012 17:01
+entering extended mode
+ %&-line parsing enabled.
+**CXX=g++-4.4 CC=g++-4.4 FC= LD=g++-4.4 -lg2c -lm -O -output lbfgsb.mexglx solv
+er.o matlabexception.o matlabscalar.o matlabstring.o matlabmatrix.o arrayofmatr
+ices.o program.o matlabprogram.o lbfgsb.o
+(/usr/share/texmf-texlive/tex/latex/tools/q.tex
+This is MeX  Version 1.05  18 XII 1993  (B. Jackowski & M. Ry\'cko)
+File ignored
+)
+! Emergency stop.
+<*> ...trices.o program.o matlabprogram.o lbfgsb.o
+                                                  
+*** (job aborted, no legal \end found)
+
+No pages of output.

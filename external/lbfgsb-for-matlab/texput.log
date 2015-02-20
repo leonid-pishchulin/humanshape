@@ -1,0 +1,12 @@
+This is pdfTeX, Version 3.1415926-1.40.10 (TeX Live 2009/Debian) (format=mex 2012.5.10)  6 AUG 2012 06:34
+entering extended mode
+ %&-line parsing enabled.
+**lbfgsb arrayofmatrices.cpp lbfgsb.cpp matlabexception.cpp matlabmatrix.cpp ma
+tlabprogram.cpp matlabscalar.cpp matlabstring.cpp program.cpp solver.f
+
+! Emergency stop.
+<*> lbfgsb 
+           arrayofmatrices.cpp lbfgsb.cpp matlabexception.cpp matlabmatrix.c...
+End of file on the terminal!
+
+No pages of output.
