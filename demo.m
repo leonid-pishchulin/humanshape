@@ -2,7 +2,7 @@ expidx = 0;
 p = expParams(expidx);
 
 %% manipulate shape and pose
-fprintf('mean pose and shape\n');
+fprintf('mean pose and shape, press any key\n');
 poseParams = zeros(1,31); % mean pose
 shapeParams = zeros(1,p.nPCA); % mean shape
 load([p.modelInDir '/evectors'],'evectors'); % shape space eigenvectors
@@ -15,9 +15,9 @@ points = shapepose(poseParams,shapeParams,evectors,p.modelInDir);
 load(p.facesSM,'faces');
 clf;
 showmodel(points,faces,'r',[],0);
-axis equal; view(45,22.5); pause; fprintf('press any button\n');
+axis equal; view(45,22.5); pause; 
 
-fprintf('change pose and shape\n');
+fprintf('change pose and shape, press any key\n');
 % description of pose parameters in shapemodel/poseParamsDescript.m
 poseParams(24) = 45/180*pi; % rotate right shoulder by 45 degrees
 shapeParams(1) = 3*sqrt(evalues(1)); % change height to 3 st.d. from mean
@@ -26,15 +26,15 @@ points = shapepose(poseParams,shapeParams,evectors,p.modelInDir);
 % show model
 hold on;
 showmodel(points,faces,'g',[],0);
-axis equal; view(45,22.5); pause; fprintf('press any button\n');
+axis equal; view(45,22.5); pause;
 
-fprintf('visualize eigenvector scaled by 3 st.d.\n');
+fprintf('visualize eigenvector scaled by 3 st.d., press any key\n');
 vpAngle = 90; % visualization viewpoint
 idxShape = 1; % first eigenvector
 sign = -1; % sign of st.d.
 bSave = false; % save figure
 clf;
-visModelVP(expidx,vpAngle,idxShape,sign,bSave); pause; fprintf('press any button\n');
+visModelVP(expidx,vpAngle,idxShape,sign,bSave); pause;
 
 %% register human scan
 scanName = 'scan';
@@ -44,12 +44,12 @@ fprintf('register human scan\n');
 fitMesh(scanFilenames,landmarkFilenames,expidx);
 
 % visualize registration
-fprintf('result of pose fitting using landmarks\n');
-clf; visFitDir([p.saveDir '/' scanName],0); pause; fprintf('press any button\n');
-fprintf('result of pose and shape fitting using all vertices\n');
-clf; visFitDir([p.saveDir '/' scanName],1); pause; fprintf('press any button\n');
-fprintf('result of non-rigid deformation\n');
-clf; visFitDir([p.saveDir '/' scanName],2); pause; fprintf('press any button\n');
+fprintf('result of pose fitting using landmarks, press any key\n');
+clf; visFitDir([p.saveDir '/' scanName],0); pause;
+fprintf('result of pose and shape fitting using all vertices, press any key\n');
+clf; visFitDir([p.saveDir '/' scanName],1); pause;
+fprintf('result of non-rigid deformation, press any key\n');
+clf; visFitDir([p.saveDir '/' scanName],2); pause;
 
 %% learn PCA model
 % learnPCA(expidx);
