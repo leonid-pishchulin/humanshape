@@ -44,6 +44,7 @@ fprintf('register human scan\n');
 fitMesh(scanFilenames,landmarkFilenames,expidx);
 
 % visualize registration
+fprintf('results: red - fitted mesh, blue - overlaid scan\n');
 fprintf('result of pose fitting using landmarks, press any key\n');
 clf; visFitDir([p.fitDir '/' scanName],0); pause;
 fprintf('result of pose and shape fitting using all vertices, press any key\n');
