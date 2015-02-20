@@ -2,7 +2,6 @@ function visModelVP(expidx,VP,idxShape,sign,bSave)
 
 p = expParams(expidx);
 
-modelDir = p.modelDir;
 if (bSave)
     figuresDir = p.figuresDir;
 end
