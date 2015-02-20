@@ -11,8 +11,8 @@ end
 
 p = expParams(expidx);
 
-if (~exist(p.saveDir,'dir'))
-    mkdir(p.saveDir);
+if (~exist(p.fitDir,'dir'))
+    mkdir(p.fitDir);
 end
 
 % remove mosek from matlab path, if any
