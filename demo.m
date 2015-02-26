@@ -54,5 +54,5 @@ clf; visFitDir([p.fitDir '/' scanName],2); pause;
 
 %% learn PCA model
 % learnPCA(expidx);
-% createModel(0);
+% createModel(expidx);
 fprintf('done\n');
