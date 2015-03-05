@@ -1,5 +1,4 @@
 HUMANSHAPE - 3D Human Shape Modeling, Fitting and Evaluation
-
 =====
 
 This short documentation describes steps necessary to compile and run the 3D human body shape building, manipulation, fitting and evaluation presented in the paper:
@@ -49,8 +48,11 @@ Running
 TODO
 ---
 1. Add evaluation code
+
    	1) per-vertex mean fitting accuracy
+
    	2) total fitting accuracy
+
    	3) compactness, generalization and specificity
 
 If you have any questions, send an email to leonid@mpi-inf.mpg.de with a topic "humanshape".
