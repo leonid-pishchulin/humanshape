@@ -5,9 +5,9 @@ This short documentation describes steps necessary to compile and run the 3D hum
 
 **Leonid Pishchulin, Stefanie Wuhrer, Thomas Helten, Christian Theobald and Bernt Schiele  
 Building Statistical Shape Spaces for 3D Human Modeling
-ArXiv, March 2015**
+In _ArXiv_, March 2015**
 
-For more information visit out project web page https://humanshape.mpi-inf.mpg.de/
+https://humanshape.mpi-inf.mpg.de/
 
 Compiling
 ---
