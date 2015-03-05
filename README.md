@@ -7,7 +7,7 @@ This short documentation describes steps necessary to compile and run the 3D hum
 Building Statistical Shape Spaces for 3D Human Modeling
 ArXiv, March 2015**
 
-https://www.humanshape.mpi-inf.mpg.de/
+For more information visit out project web page https://humanshape.mpi-inf.mpg.de/
 
 Compiling
 ---
