@@ -5,7 +5,9 @@ This short documentation describes steps necessary to compile and run the 3D hum
 
 **Leonid Pishchulin, Stefanie Wuhrer, Thomas Helten, Christian Theobald and Bernt Schiele  
 Building Statistical Shape Spaces for 3D Human Modeling
-ArXiv, February 2015**
+ArXiv, March 2015**
+
+https://www.humanshape.mpi-inf.mpg.de/
 
 Compiling
 ---
@@ -24,12 +26,14 @@ This code was developed under Linux (Debian _wheezy_, 64 bit) and was tested onl
 
 Getting the models
 ---
+
 1. Download the models
 ```
     wget http://datasets.d2.mpi-inf.mpg.de/humanshape/caesar.zip
     wget http://datasets.d2.mpi-inf.mpg.de/humanshape/caesar-norm-wsx.zip
     wget http://datasets.d2.mpi-inf.mpg.de/humanshape/caesar-norm-nh.zip
 ```
+
 2. Unzip the models
 ```
     unzip caesar.zip && rm -f caesar.zip
@@ -47,12 +51,10 @@ Running
 
 TODO
 ---
-1. Add evaluation code
+Add evaluation code for 
 
-   	1) per-vertex mean fitting accuracy
-
-   	2) total fitting accuracy
-
-   	3) compactness, generalization and specificity
+1. Per-vertex mean fitting accuracy
+1. Total fitting accuracy
+1. Compactness, generalization and specificity
 
 If you have any questions, send an email to leonid@mpi-inf.mpg.de with a topic "humanshape".
