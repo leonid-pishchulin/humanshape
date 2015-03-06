@@ -3,7 +3,7 @@ HUMANSHAPE - 3D Human Shape Modeling, Fitting and Evaluation
 
 This short documentation describes steps necessary to compile and run the 3D human body shape building, manipulation, fitting and evaluation presented in the paper:
 
-**Leonid Pishchulin, Stefanie Wuhrer, Thomas Helten, Christian Theobald and Bernt Schiele  
+**Leonid Pishchulin, Stefanie Wuhrer, Thomas Helten, Christian Theobalt and Bernt Schiele  
 Building Statistical Shape Spaces for 3D Human Modeling
 In _ArXiv_, March 2015**
 
