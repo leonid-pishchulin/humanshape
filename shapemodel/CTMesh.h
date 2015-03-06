@@ -1,9 +1,9 @@
 /**
     This file is part of the implementation of the 3D human shape model as described in the paper:
 
-    Leonid Pishchulin, Stefanie Wuhrer, Thomas Helten, Christian Theobald and Bernt Schiele
+    Leonid Pishchulin, Stefanie Wuhrer, Thomas Helten, Christian Theobalt and Bernt Schiele
     Building Statistical Shape Spaces for 3D Human Modeling
-    ArXiv, February 2015
+    ArXiv, March 2015
 
     Please cite the paper if you are using this code in your work.
     
