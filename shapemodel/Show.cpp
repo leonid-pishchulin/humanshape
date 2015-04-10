@@ -24,11 +24,6 @@
 #include "Main.h"
 #endif
 
-//#ifdef USEGPU
-#include "GL/glew.h"
-#include "GL/glut.h"
-//#endif
-
 namespace NShow {
 
   int mViewNo = 0;
@@ -239,10 +234,11 @@ std::ostream& operator<<(std::ostream& aStream, const std::vector<bool>& vec) {
   aStream << std::endl;
   return aStream;
 }
-
+/*
 std::ostream& operator<<(std::ostream& aStream, const std::vector<GLubyte>& vec) {
   for(std::vector<GLubyte>::const_iterator it = vec.begin(); it!=vec.end(); ++it)
     aStream << int(*it) << ' ';
   aStream << std::endl;
   return aStream;
 }
+*/

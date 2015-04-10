@@ -29,11 +29,6 @@
 #include "onlyDefines.h"
 #include "paramMap.h"
 
-#ifdef USEGPU
-#include "GL/glew.h"
-#include "GL/glut.h"
-#endif
-
 #include "time.h"
 #include "stdlib.h"
 #include "mex.h"

@@ -38,6 +38,8 @@ switch expidx
     case 0
         p.name = 'init-nrd-3';
         % directory with fitting results
+        % e.g. p.fitDir = 'caesar-norm-nh-fitted-meshes';
+        % each fitted mesh should be stored as p.fitDir/<mesh-name>/NRD.mat
         p.fitDir = [p.expDir '/' p.name];
         %load initial fitting, if available
         p.initDir = p.fitDir;

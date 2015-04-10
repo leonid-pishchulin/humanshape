@@ -1,5 +1,5 @@
 # Linux settings.
-MATLAB_HOME = /usr/lib/matlab-8.3/
+MATLAB_HOME = /usr/lib/matlab-8.4/
 MEX         = $(MATLAB_HOME)/bin/mex
 MEXSUFFIX   = mexa64
 CXX         = g++-4.7

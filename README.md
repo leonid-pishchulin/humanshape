@@ -41,6 +41,23 @@ Getting the models
     unzip caesar-norm-nh.zip && rm -f caesar-norm-nh.zip
 ```
 
+Getting the fitted meshes
+---
+
+1. Download the fitted meshes
+```
+    wget http://datasets.d2.mpi-inf.mpg.de/humanshape/caesar-fitted-meshes.zip
+    wget http://datasets.d2.mpi-inf.mpg.de/humanshape/caesar-norm-wsx-fitted-meshes.zip
+    wget http://datasets.d2.mpi-inf.mpg.de/humanshape/caesar-norm-nh-fitted-meshes.zip
+```
+
+2. Unzip the fitted meshes
+```
+    unzip caesar-fitted-meshes.zip && rm -f caesar-fitted-meshes.zip
+    unzip caesar-norm-wsx-fitted-meshes.zip && rm -f caesar-norm-wsx-fitted-meshes.zip
+    unzip caesar-norm-nh-fitted-meshes.zip && rm -f caesar-norm-nh-fitted-meshes.zip
+```
+
 Running
 ---
 1. Start matlab

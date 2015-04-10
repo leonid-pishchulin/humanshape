@@ -6,8 +6,6 @@
 #ifndef _bool_h
 #define _bool_h 1
 
-#include   <_G_config.h>
-
 #if _G_HAVE_BOOL
 #undef TRUE
 #undef FALSE
